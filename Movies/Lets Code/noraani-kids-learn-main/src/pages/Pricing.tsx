@@ -24,7 +24,12 @@ export default function Pricing() {
             {/* Two-column intro */}
             <div className="grid md:grid-cols-2 gap-8 mb-8 items-center">
               <div>
-                <h1 className="text-5xl font-extrabold text-primary mb-2" style={{ fontFamily: 'Comic Sans MS, Comic Sans, cursive' }}>Pricing</h1>
+                <h1
+                  className="text-2xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight"
+                  style={{ fontFamily: "'Fredoka', sans-serif" }}
+                >
+                  Pricing
+                </h1>
                 <p className="text-lg text-slate-700 mb-4 max-w-xl">Find out more about our classes pricing. Simple and Affordable for all.</p>
                 <ul className="list-disc pl-5 text-slate-700 mb-2">
                   <li>SELECT YOUR LEARNING PLAN</li>
