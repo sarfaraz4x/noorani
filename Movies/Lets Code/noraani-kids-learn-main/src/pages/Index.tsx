@@ -12,23 +12,23 @@ import { Users, Gamepad2, BookOpen, Handshake, Sparkles, MessageCircle, Users2, 
 
 const LearnWithAyaanAndMariam = () => (
   <section className="relative py-16 bg-gradient-to-b from-white via-yellow-50 to-pink-50">
-    <div className="container mx-auto px-4 flex flex-col md:flex-row items-center justify-center gap-10">
+    <div className="container mx-auto px-4 flex flex-row items-center justify-center gap-4 lg:gap-10">
       {/* Girl image left */}
-      <div className="flex-shrink-0 order-1 md:order-none mb-6 md:mb-0">
-        <img src="/cartoon-muslim-girl-nura-a-cheerful-musl_3M9ky64SR6u4xu6oOJoOvA_tAuUlG9qTB2OLpQfF8prfA.jpeg" alt="Mariam cartoon" className="w-40 h-40 md:w-56 md:h-56 rounded-full object-cover border-4 border-yellow-200 bg-white shadow-lg" />
+      <div className="flex-shrink-0">
+        <img src="/cartoon-muslim-girl-nura-a-cheerful-musl_3M9ky64SR6u4xu6oOJoOvA_tAuUlG9qTB2OLpQfF8prfA.jpeg" alt="Mariam cartoon" className="w-32 h-32 lg:w-56 lg:h-56 rounded-full object-cover border-4 border-yellow-200 bg-white shadow-lg" />
       </div>
       {/* Text center */}
-      <div className="flex flex-col items-center md:items-center text-center md:text-center order-3 md:order-none">
-        <h2 className="text-4xl md:text-5xl font-extrabold text-primary mb-4" style={{ fontFamily: 'Comic Sans MS, Comic Sans, cursive' }}>
+      <div className="flex flex-col items-center text-center flex-1 max-w-md lg:max-w-lg">
+        <h2 className="text-2xl md:text-3xl lg:text-5xl font-extrabold text-primary mb-3 lg:mb-4" style={{ fontFamily: 'Comic Sans MS, Comic Sans, cursive' }}>
           Learn with Ayaan & Mariam
         </h2>
-        <p className="text-lg md:text-xl text-muted-foreground max-w-lg mb-6">
+        <p className="text-sm md:text-base lg:text-xl text-muted-foreground mb-4 lg:mb-6 text-center leading-relaxed">
           Meet your new learning buddies! Ayaan & Mariam make every lesson fun, interactive, and full of smiles. Join us for a journey of discovery, faith, and friendship.
         </p>
       </div>
       {/* Boy image right */}
-      <div className="flex-shrink-0 order-2 md:order-none mb-6 md:mb-0">
-        <img src="/a-charming-child-friendly-cartoon-illust_xn5OLAW7RgKHG6Lm1It5lg_gk1ihdTgSCyfg1K-CU35WA.jpeg" alt="Ayaan cartoon" className="w-40 h-40 md:w-56 md:h-56 rounded-full object-cover border-4 border-yellow-200 bg-white shadow-lg" />
+      <div className="flex-shrink-0">
+        <img src="/a-charming-child-friendly-cartoon-illust_xn5OLAW7RgKHG6Lm1It5lg_gk1ihdTgSCyfg1K-CU35WA.jpeg" alt="Ayaan cartoon" className="w-32 h-32 lg:w-56 lg:h-56 rounded-full object-cover border-4 border-yellow-200 bg-white shadow-lg" />
       </div>
     </div>
   </section>
@@ -36,20 +36,32 @@ const LearnWithAyaanAndMariam = () => (
 
 const LiveTeachersFunClasses = () => (
   <section className="relative py-16 bg-gradient-to-b from-yellow-50 via-white to-pink-50">
-    <div className="container mx-auto px-4 flex flex-col md:flex-row items-center justify-center gap-10">
+    <div className="container mx-auto px-4 flex flex-col lg:flex-row items-center justify-center gap-10">
       {/* Text content */}
-      <div className="flex-1 flex flex-col items-center md:items-start text-center md:text-left mb-8 md:mb-0">
+      <div className="flex-1 flex flex-col items-center lg:items-start text-center lg:text-left mb-8 lg:mb-0">
         <h2 className="text-3xl md:text-4xl font-extrabold text-primary mb-4" style={{ fontFamily: 'Comic Sans MS, Comic Sans, cursive' }}>
           Live Teachers. Fun Classes.
         </h2>
-        <p className="text-lg md:text-xl text-muted-foreground max-w-lg mb-6">
+        <p className="text-lg md:text-xl text-muted-foreground max-w-lg mb-6 text-center lg:text-left">
           Live, teacher-instructed learning for children. Our classes are interactive, engaging, and designed to make Islamic learning fun and memorable for every child.
         </p>
-        <ul className="text-left text-base text-foreground space-y-2 mb-4">
-          <li className="flex items-center gap-2"><Users2 className="h-5 w-5 text-primary" />Small group, interactive sessions</li>
-          <li className="flex items-center gap-2"><GraduationCap className="h-5 w-5 text-primary" />Certified, caring Islamic educators</li>
-          <li className="flex items-center gap-2"><CheckCircle2 className="h-5 w-5 text-primary" />Real-time feedback and encouragement</li>
-          <li className="flex items-center gap-2"><PartyPopper className="h-5 w-5 text-primary" />Fun activities, stories, and games</li>
+        <ul className="text-center lg:text-left text-base text-foreground space-y-3 mb-4 w-full max-w-md">
+          <li className="flex items-center gap-3 justify-center lg:justify-start">
+            <Users2 className="h-5 w-5 text-primary flex-shrink-0" />
+            <span>Small group, interactive sessions</span>
+          </li>
+          <li className="flex items-center gap-3 justify-center lg:justify-start">
+            <GraduationCap className="h-5 w-5 text-primary flex-shrink-0" />
+            <span>Certified, caring Islamic educators</span>
+          </li>
+          <li className="flex items-center gap-3 justify-center lg:justify-start">
+            <CheckCircle2 className="h-5 w-5 text-primary flex-shrink-0" />
+            <span>Real-time feedback and encouragement</span>
+          </li>
+          <li className="flex items-center gap-3 justify-center lg:justify-start">
+            <PartyPopper className="h-5 w-5 text-primary flex-shrink-0" />
+            <span>Fun activities, stories, and games</span>
+          </li>
         </ul>
         <a href="#programs" className="inline-block mt-2 px-8 py-4 bg-primary text-white font-bold rounded-full shadow-lg hover:bg-primary/90 transition-colors text-lg" style={{ fontFamily: 'Comic Sans MS, Comic Sans, cursive' }}>
           Explore Our Programs
@@ -94,55 +106,105 @@ const EveryClassCounts = () => {
     { icon: Sparkles, label: 'Faith', bg: 'bg-purple-200' },
     { icon: MessageCircle, label: 'Communication', bg: 'bg-pink-200' },
   ];
-  // Circle layout parameters
-  const radius = 170; // px
 
   return (
     <section className="relative py-20 bg-gradient-to-b from-pink-50 via-white to-yellow-50">
-      <div className="container mx-auto px-4 flex flex-col md:flex-row items-center justify-center gap-10">
-        {/* Left: Bee and circular icons */}
-        <div className="flex-1 flex flex-col items-center justify-center relative min-w-[340px] h-[340px] md:h-[400px]">
-          {/* Central bee */}
-          <div className="absolute left-1/2 top-1/2 z-10" style={{ transform: 'translate(-50%, -50%)' }}>
-            <img src="/bee-mascot-Photoroom-Picsart-AiImageEnhancer.png" alt="Bee mascot" className="w-48 h-48 md:w-64 md:h-64 object-contain drop-shadow-xl" />
-          </div>
-          {/* Circular icons around bee */}
-          {icons.map((item, i) => {
-            const angle = (i / icons.length) * 2 * Math.PI;
-            const x = Math.cos(angle) * radius;
-            const y = Math.sin(angle) * radius;
-            return (
-              <div
-                key={item.label}
-                className={`absolute flex flex-col items-center`}
-                style={{
-                  left: `calc(50% + ${x}px)` ,
-                  top: `calc(50% + ${y}px)` ,
-                  transform: 'translate(-50%, -50%)',
-                }}
-              >
-                <div className={`w-14 h-14 rounded-full ${item.bg} flex items-center justify-center mb-1 shadow-md`}>
-                  <item.icon className="h-8 w-8 text-slate-700" />
-                </div>
-                <span className="text-xs font-bold text-slate-700 whitespace-nowrap">{item.label}</span>
+      <div className="container mx-auto px-4 flex flex-col lg:flex-row items-center justify-center gap-10">
+        {/* Left: Bee and circular icons - Responsive circular layout */}
+        <div className="flex-1 flex flex-col items-center justify-center relative w-full max-w-sm lg:max-w-none">
+          {/* Mobile: Circular layout with smaller radius */}
+          <div className="block lg:hidden w-full mb-8">
+            <div className="relative w-full h-[280px] flex items-center justify-center">
+              {/* Central bee for mobile */}
+              <div className="absolute left-1/2 top-1/2 z-10" style={{ transform: 'translate(-50%, -50%)' }}>
+                <img src="/bee-mascot-Photoroom-Picsart-AiImageEnhancer.png" alt="Bee mascot" className="w-24 h-24 object-contain drop-shadow-xl" />
               </div>
-            );
-          })}
+              {/* Circular icons around bee for mobile */}
+              {icons.map((item, i) => {
+                const angle = (i / icons.length) * 2 * Math.PI;
+                const radius = 90; // Smaller radius for mobile
+                const x = Math.cos(angle) * radius;
+                const y = Math.sin(angle) * radius;
+                return (
+                  <div
+                    key={item.label}
+                    className={`absolute flex flex-col items-center`}
+                    style={{
+                      left: `calc(50% + ${x}px)` ,
+                      top: `calc(50% + ${y}px)` ,
+                      transform: 'translate(-50%, -50%)',
+                    }}
+                  >
+                    <div className={`w-10 h-10 rounded-full ${item.bg} flex items-center justify-center mb-1 shadow-md`}>
+                      <item.icon className="h-5 w-5 text-slate-700" />
+                    </div>
+                    <span className="text-xs font-bold text-slate-700 text-center leading-tight max-w-[60px]">{item.label}</span>
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+
+          {/* Desktop: Circular layout */}
+          <div className="hidden lg:flex flex-col items-center justify-center relative min-w-[340px] h-[400px]">
+            {/* Central bee */}
+            <div className="absolute left-1/2 top-1/2 z-10" style={{ transform: 'translate(-50%, -50%)' }}>
+              <img src="/bee-mascot-Photoroom-Picsart-AiImageEnhancer.png" alt="Bee mascot" className="w-64 h-64 object-contain drop-shadow-xl" />
+            </div>
+            {/* Circular icons around bee */}
+            {icons.map((item, i) => {
+              const angle = (i / icons.length) * 2 * Math.PI;
+              const radius = 170; // px
+              const x = Math.cos(angle) * radius;
+              const y = Math.sin(angle) * radius;
+              return (
+                <div
+                  key={item.label}
+                  className={`absolute flex flex-col items-center`}
+                  style={{
+                    left: `calc(50% + ${x}px)` ,
+                    top: `calc(50% + ${y}px)` ,
+                    transform: 'translate(-50%, -50%)',
+                  }}
+                >
+                  <div className={`w-14 h-14 rounded-full ${item.bg} flex items-center justify-center mb-1 shadow-md`}>
+                    <item.icon className="h-8 w-8 text-slate-700" />
+                  </div>
+                  <span className="text-xs font-bold text-slate-700 whitespace-nowrap">{item.label}</span>
+                </div>
+              );
+            })}
+          </div>
         </div>
-        {/* Right: Text content */}
-        <div className="flex-1 flex flex-col items-center md:items-start text-center md:text-left">
-          <h2 className="text-4xl md:text-5xl font-extrabold text-primary mb-2" style={{ fontFamily: 'Comic Sans MS, Comic Sans, cursive' }}>
+
+        {/* Right: Text content - Improved mobile layout */}
+        <div className="flex-1 flex flex-col items-center lg:items-start text-center lg:text-left">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-primary mb-2" style={{ fontFamily: 'Comic Sans MS, Comic Sans, cursive' }}>
             Every Class Counts
           </h2>
-          <p className="text-xl font-bold text-slate-700 mb-4">Your child grows in faith, confidence, and understanding with every class.</p>
-          <p className="text-base text-muted-foreground mb-6 max-w-md">
+          <p className="text-lg md:text-xl font-bold text-slate-700 mb-4 text-center lg:text-left">
+            Your child grows in faith, confidence, and understanding with every class.
+          </p>
+          <p className="text-base text-muted-foreground mb-6 max-w-md text-center lg:text-left">
             Our approach ensures that every lesson is meaningful, memorable, and fun!
           </p>
-          <ul className="text-left text-base text-foreground space-y-2 mb-4">
-            <li className="flex items-center gap-2"><Users2 className="h-5 w-5 text-primary" />Small group, interactive sessions</li>
-            <li className="flex items-center gap-2"><GraduationCap className="h-5 w-5 text-primary" />Certified, caring Islamic educators</li>
-            <li className="flex items-center gap-2"><CheckCircle2 className="h-5 w-5 text-primary" />Real-time feedback and encouragement</li>
-            <li className="flex items-center gap-2"><PartyPopper className="h-5 w-5 text-primary" />Fun activities, stories, and games</li>
+          <ul className="text-center lg:text-left text-base text-foreground space-y-3 mb-4 w-full max-w-md">
+            <li className="flex items-center gap-3 justify-center lg:justify-start">
+              <Users2 className="h-5 w-5 text-primary flex-shrink-0" />
+              <span>Small group, interactive sessions</span>
+            </li>
+            <li className="flex items-center gap-3 justify-center lg:justify-start">
+              <GraduationCap className="h-5 w-5 text-primary flex-shrink-0" />
+              <span>Certified, caring Islamic educators</span>
+            </li>
+            <li className="flex items-center gap-3 justify-center lg:justify-start">
+              <CheckCircle2 className="h-5 w-5 text-primary flex-shrink-0" />
+              <span>Real-time feedback and encouragement</span>
+            </li>
+            <li className="flex items-center gap-3 justify-center lg:justify-start">
+              <PartyPopper className="h-5 w-5 text-primary flex-shrink-0" />
+              <span>Fun activities, stories, and games</span>
+            </li>
           </ul>
         </div>
       </div>
@@ -261,8 +323,8 @@ const Index = () => {
       <BeePath />
       <Header />
       <HeroSection />
-      <LearnWithAyaanAndMariam />
       <LiveTeachersFunClasses />
+      <LearnWithAyaanAndMariam />
       <WhyChooseUs />
       <CurriculumHighlights />
       <AgeGroups />

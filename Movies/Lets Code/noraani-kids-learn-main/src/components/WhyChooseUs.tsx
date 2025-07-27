@@ -63,9 +63,9 @@ const WhyChooseUs = () => {
         <div className="absolute bottom-20 right-10 w-18 h-18 bg-green-200 rounded-full opacity-35 animate-bounce" style={{animationDelay: '0.5s'}}></div>
       </div>
 
-      <div className="container mx-auto px-4 lg:px-6 flex flex-col md:flex-row items-center gap-12 relative z-10">
+      <div className="container mx-auto px-4 lg:px-6 flex flex-col lg:flex-row items-center gap-12 relative z-10">
         {/* Illustration */}
-        <div className="flex-shrink-0 relative">
+        <div className="flex-shrink-0 relative order-2 lg:order-1">
           <div className="relative group">
             {/* Decorative rings around the main image */}
             <div className="absolute -inset-4 bg-gradient-to-r from-yellow-200 to-pink-200 rounded-full opacity-30 group-hover:opacity-50 transition-opacity duration-500 animate-pulse"></div>
@@ -73,33 +73,33 @@ const WhyChooseUs = () => {
             <img 
               src="/cartoon-muslim-girl-nura-a-cheerful-musl_3M9ky64SR6u4xu6oOJoOvA_tAuUlG9qTB2OLpQfF8prfA.jpeg" 
               alt="Nura cartoon" 
-              className="w-64 h-64 rounded-full shadow-2xl border-4 border-white object-cover bg-white relative z-10 group-hover:scale-105 transition-transform duration-500" 
+              className="w-48 h-48 lg:w-64 lg:h-64 rounded-full shadow-2xl border-4 border-white object-cover bg-white relative z-10 group-hover:scale-105 transition-transform duration-500" 
             />
           </div>
         </div>
 
         {/* Content */}
-        <div className="flex-1">
-          <div className="text-center md:text-left mb-16">
-            <h2 className="text-4xl md:text-5xl font-extrabold text-slate-800 mb-6" style={{ fontFamily: 'Comic Sans MS, Comic Sans, cursive' }}>
-              Learn with <span className="text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-purple-600">Nura & Anas</span>
-          </h2>
-            <p className="text-xl text-slate-600 max-w-2xl mx-auto md:mx-0 leading-relaxed">
-            Discover why thousands of Muslim families trust Noorani Academy for their children's Islamic education
-          </p>
-        </div>
+        <div className="flex-1 order-1 lg:order-2">
+          <div className="text-center lg:text-left mb-12 lg:mb-16">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-primary mb-6" style={{ fontFamily: 'Comic Sans MS, Comic Sans, cursive' }}>
+              Why Choose Noorani Academy?
+            </h2>
+            <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto lg:mx-0 leading-relaxed">
+              Discover why thousands of Muslim families trust Noorani Academy for their children's Islamic education
+            </p>
+          </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-8 w-full">
           {features.map((feature, index) => (
               <Card key={index} className={`group transition-all duration-200 border-0 ${feature.bgColor} ${feature.hoverColor} hover:shadow-md hover:scale-105`}>
-              <CardContent className="p-8 text-center">
-                  <div className={`mb-4 mx-auto flex items-center justify-center rounded-full w-16 h-16 ${feature.iconBg} group-hover:scale-110 transition-transform duration-200`}>
-                    <feature.icon className="h-8 w-8 text-slate-700" />
+              <CardContent className="p-4 lg:p-8 text-center">
+                  <div className={`mb-3 lg:mb-4 mx-auto flex items-center justify-center rounded-full w-12 h-12 lg:w-16 lg:h-16 ${feature.iconBg} group-hover:scale-110 transition-transform duration-200`}>
+                    <feature.icon className="h-6 w-6 lg:h-8 lg:w-8 text-slate-700" />
                 </div>
-                <h3 className="font-semibold text-lg text-foreground mb-3">
+                <h3 className="font-semibold text-sm lg:text-lg text-foreground mb-2 lg:mb-3">
                   {feature.title}
                 </h3>
-                <p className="text-muted-foreground text-sm leading-relaxed">
+                <p className="text-muted-foreground text-xs lg:text-sm leading-relaxed">
                   {feature.description}
                 </p>
               </CardContent>

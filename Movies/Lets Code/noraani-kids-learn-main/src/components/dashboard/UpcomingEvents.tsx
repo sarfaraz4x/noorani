@@ -65,7 +65,7 @@ const UpcomingEvents = () => {
             </p>
           </div>
         ) : (
-          <div className="space-y-3">
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
             {events.map((event) => (
               <div key={event.id} className="border rounded-lg p-3">
                 <h4 className="font-medium text-foreground">{event.title}</h4>

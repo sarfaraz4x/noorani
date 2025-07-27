@@ -1,7 +1,28 @@
 import { Button } from "@/components/ui/button";
-import { PhoneCall } from "lucide-react";
+import { PhoneCall, Menu, X } from "lucide-react";
+import { Link, useLocation } from "react-router-dom";
+import { useState } from "react";
+
+const navLinks = [
+  { to: "/programs", label: "Programs" },
+  { to: "/curriculum", label: "Our Curriculum" },
+  { to: "/pricing", label: "Pricing" },
+  { to: "/about", label: "About" },
+  { to: "/contact", label: "Contact Us" },
+];
 
 const Header = () => {
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const location = useLocation();
+
+  const toggleMobileMenu = () => {
+    setIsMobileMenuOpen(!isMobileMenuOpen);
+  };
+
+  const closeMobileMenu = () => {
+    setIsMobileMenuOpen(false);
+  };
+
   return (
     <>
       {/* Top Thin Bar with Phone Number */}
@@ -16,7 +37,7 @@ const Header = () => {
       <header className="sticky top-0 z-40 w-full bg-background/95 backdrop-blur-sm border-b border-border">
         <div className="container mx-auto px-4 lg:px-6 h-16 flex items-center justify-between">
           {/* Logo */}
-          <div className="flex items-center space-x-2 drop-shadow-lg">
+          <Link to="/" className="flex items-center space-x-2 drop-shadow-lg hover:scale-105 transition-transform duration-200" onClick={closeMobileMenu}>
             <div className="w-16 h-16 flex items-center justify-center">
               <img src="/Untitled design (1)-modified (1).png" alt="Noorani Academy Logo" className="w-16 h-16 rounded-full object-cover border-4 border-yellow-200 shadow-lg bg-white" />
             </div>
@@ -24,47 +45,81 @@ const Header = () => {
               <span className="font-black text-2xl text-primary tracking-tight leading-none drop-shadow-sm" style={{ fontFamily: 'Comic Sans MS, Comic Sans, cursive' }}>NOORANI</span>
               <span className="text-sm md:text-base text-yellow-600 font-semibold mt-0.5 tracking-[0.3em] uppercase leading-none" style={{ letterSpacing: '0.3em', fontFamily: 'Comic Sans MS, Comic Sans, cursive' }}>ACADEMY</span>
             </div>
-          </div>
+          </Link>
 
-          {/* Navigation */}
-          <nav className="hidden md:flex items-center space-x-10">
-            <a href="#programs" className="text-sm font-semibold text-foreground hover:text-primary transition-colors duration-200 hover:scale-105">
-              Programs
-            </a>
-            <a href="#curriculum" className="text-sm font-semibold text-foreground hover:text-primary transition-colors duration-200 hover:scale-105">
-              Our Curriculum
-            </a>
-            <a href="/pricing" className="text-sm font-semibold text-foreground hover:text-primary transition-colors duration-200 hover:scale-105">
-              Pricing
-            </a>
-            <a href="#about" className="text-sm font-semibold text-foreground hover:text-primary transition-colors duration-200 hover:scale-105">
-              About
-            </a>
-            <a href="#contact" className="text-sm font-semibold text-foreground hover:text-primary transition-colors duration-200 hover:scale-105">
-              Contact Us
-            </a>
-            <span className="text-sm font-semibold text-islamic-green cursor-pointer hover:text-islamic-green/80 transition-colors duration-200 hover:scale-105">
-              العربية
-            </span>
+          {/* Desktop Navigation */}
+          <nav className="hidden lg:flex items-center space-x-10">
+            {navLinks.map(link => (
+              <Link
+                key={link.to}
+                to={link.to}
+                className={`text-sm font-semibold transition-colors duration-200 hover:text-primary hover:scale-105 ${location.pathname === link.to ? 'text-primary font-bold' : 'text-foreground'}`}
+              >
+                {link.label}
+              </Link>
+            ))}
           </nav>
 
-          {/* CTA Button */}
-          <div className="flex items-center space-x-3">
-            <Button variant="outline" size="lg" className="hidden md:inline-flex border-2 border-primary text-primary font-bold hover:bg-primary/10 transition-colors duration-200" asChild>
+          {/* Desktop CTA Buttons */}
+          <div className="hidden lg:flex items-center space-x-3">
+            <Button variant="outline" size="lg" className="border-2 border-primary text-primary font-bold hover:bg-primary/10 transition-colors duration-200" asChild>
               <a href="/auth?login=true">Student Login</a>
             </Button>
-            <Button variant="hero" size="lg" className="hidden md:inline-flex shadow-lg" asChild>
+            <Button variant="hero" size="lg" className="shadow-lg" asChild>
               <a href="/auth">Sign Up Now</a>
             </Button>
           </div>
 
           {/* Mobile menu button */}
-          <button className="md:hidden p-2">
-            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-            </svg>
+          <button 
+            className="lg:hidden p-2 text-foreground hover:text-primary transition-colors"
+            onClick={toggleMobileMenu}
+            aria-label="Toggle mobile menu"
+          >
+            {isMobileMenuOpen ? (
+              <X className="w-6 h-6" />
+            ) : (
+              <Menu className="w-6 h-6" />
+            )}
           </button>
         </div>
+
+        {/* Mobile Navigation Menu - Compact and Card-like */}
+        {isMobileMenuOpen && (
+          <div className="lg:hidden fixed top-0 left-0 w-full h-full flex items-start justify-center z-50 bg-black/30">
+            <div className="relative mt-6 w-full max-w-xs bg-background rounded-2xl shadow-2xl border border-border p-4 mx-2 animate-fadein">
+              {/* Close button always visible */}
+              <button
+                className="absolute top-2 right-2 p-2 text-foreground hover:text-primary transition-colors z-10"
+                onClick={closeMobileMenu}
+                aria-label="Close mobile menu"
+              >
+                <X className="w-6 h-6" />
+              </button>
+              <nav className="flex flex-col space-y-2 pt-2 pb-2">
+                {navLinks.map(link => (
+                  <Link
+                    key={link.to}
+                    to={link.to}
+                    className={`block text-base font-semibold transition-colors duration-200 py-1 ${location.pathname === link.to ? 'text-primary font-bold' : 'text-foreground'} hover:text-primary`}
+                    onClick={closeMobileMenu}
+                  >
+                    {link.label}
+                  </Link>
+                ))}
+              </nav>
+              {/* Mobile CTA Buttons - Compact */}
+              <div className="flex flex-col space-y-2 pt-2 border-t border-border mt-2">
+                <Button variant="outline" size="sm" className="border-2 border-primary text-primary font-bold hover:bg-primary/10 transition-colors duration-200 text-sm py-2" asChild>
+                  <a href="/auth?login=true" onClick={closeMobileMenu}>Student Login</a>
+                </Button>
+                <Button variant="hero" size="sm" className="shadow-lg text-sm py-2" asChild>
+                  <a href="/auth" onClick={closeMobileMenu}>Sign Up Now</a>
+                </Button>
+              </div>
+            </div>
+          </div>
+        )}
       </header>
     </>
   );

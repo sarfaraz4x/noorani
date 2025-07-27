@@ -1,80 +1,82 @@
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <footer className="bg-foreground text-background py-16">
+    <footer className="bg-foreground text-background py-8 lg:py-12">
       <div className="container mx-auto px-4 lg:px-6">
-        {/* Join Now Section */}
-        <div className="text-center mb-16 bg-primary/10 rounded-3xl p-12">
-          <div className="max-w-2xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
+        {/* Join Now Section - More Compact */}
+        <div className="text-center mb-8 lg:mb-12 bg-primary/10 rounded-2xl p-6 lg:p-8">
+          <div className="max-w-xl mx-auto">
+            <h2 className="text-2xl lg:text-3xl font-bold text-primary mb-3">
               Join Now
             </h2>
-            <p className="text-lg text-white mb-8 leading-relaxed">
+            <p className="text-sm lg:text-base text-white mb-6 leading-relaxed">
               Don't Delay Your Child's Islamic Education!<br />
-              Compassionate Teaching. Proven Results. Bright Future for the Ummah.
+              Compassionate Teaching. Proven Results.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button variant="hero" size="lg" className="px-8 py-6">
-                Start Free Trial
+            <div className="flex flex-col sm:flex-row gap-3 justify-center">
+              <Button variant="hero" size="lg" className="px-6 py-3 text-sm" asChild>
+                <Link to="/auth">Start Free Trial</Link>
               </Button>
-              <Button variant="outline" size="lg" className="px-8 py-6 border-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground">
-                View Pricing
+              <Button variant="outline" size="lg" className="px-6 py-3 text-sm border-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground" asChild>
+                <Link to="/pricing">View Pricing</Link>
               </Button>
             </div>
           </div>
         </div>
 
-        <div className="grid md:grid-cols-4 gap-8 mb-12">
+        {/* Main Footer Content - Compact Grid */}
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8 mb-8">
           {/* Logo and Description */}
-          <div className="md:col-span-2">
-            <div className="flex items-center space-x-2 mb-6">
-              <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center">
-                <span className="text-primary-foreground font-bold text-xl">N</span>
+          <div className="col-span-2 lg:col-span-2">
+            <div className="flex items-center space-x-2 mb-4">
+              <div className="w-10 h-10 bg-primary rounded-full flex items-center justify-center">
+                <span className="text-primary-foreground font-bold text-lg">N</span>
               </div>
               <div className="flex flex-col">
-                <span className="font-bold text-xl text-background">NOORANI</span>
-                <span className="text-sm text-background/70 -mt-1">ACADEMY</span>
+                <span className="font-bold text-lg text-background">NOORANI</span>
+                <span className="text-xs text-background/70 -mt-1">ACADEMY</span>
               </div>
             </div>
-            <p className="text-background/70 mb-6 leading-relaxed">
+            <p className="text-background/70 mb-4 leading-relaxed text-sm">
               Nurturing young hearts with Islamic knowledge, values, and character development through interactive online learning.
             </p>
             
             {/* Social Media */}
-            <div className="flex space-x-4">
-              <div className="w-10 h-10 bg-background/10 rounded-full flex items-center justify-center hover:bg-primary transition-colors cursor-pointer">
-                <span className="text-background">📱</span>
+            <div className="flex space-x-3">
+              <div className="w-8 h-8 bg-background/10 rounded-full flex items-center justify-center hover:bg-primary transition-colors cursor-pointer">
+                <span className="text-background text-sm">📱</span>
               </div>
-              <div className="w-10 h-10 bg-background/10 rounded-full flex items-center justify-center hover:bg-primary transition-colors cursor-pointer">
-                <span className="text-background">📺</span>
+              <div className="w-8 h-8 bg-background/10 rounded-full flex items-center justify-center hover:bg-primary transition-colors cursor-pointer">
+                <span className="text-background text-sm">📺</span>
               </div>
-              <div className="w-10 h-10 bg-background/10 rounded-full flex items-center justify-center hover:bg-primary transition-colors cursor-pointer">
-                <span className="text-background">💬</span>
+              <div className="w-8 h-8 bg-background/10 rounded-full flex items-center justify-center hover:bg-primary transition-colors cursor-pointer">
+                <span className="text-background text-sm">💬</span>
               </div>
             </div>
           </div>
 
           {/* Quick Links */}
           <div>
-            <h3 className="font-semibold text-lg text-background mb-4">Quick Links</h3>
-            <ul className="space-y-3">
-              <li><a href="#programs" className="text-background/70 hover:text-primary transition-colors">Programs</a></li>
-              <li><a href="#curriculum" className="text-background/70 hover:text-primary transition-colors">Curriculum</a></li>
-              <li><a href="#pricing" className="text-background/70 hover:text-primary transition-colors">Pricing</a></li>
-              <li><a href="#about" className="text-background/70 hover:text-primary transition-colors">About Us</a></li>
+            <h3 className="font-semibold text-base text-background mb-3">Quick Links</h3>
+            <ul className="space-y-2">
+              <li><a href="#programs" className="text-background/70 hover:text-primary transition-colors text-sm">Programs</a></li>
+              <li><Link to="/curriculum" className="text-background/70 hover:text-primary transition-colors text-sm">Curriculum</Link></li>
+              <li><Link to="/pricing" className="text-background/70 hover:text-primary transition-colors text-sm">Pricing</Link></li>
+              <li><Link to="/about" className="text-background/70 hover:text-primary transition-colors text-sm">About Us</Link></li>
             </ul>
           </div>
 
           {/* Contact */}
           <div>
-            <h3 className="font-semibold text-lg text-background mb-4">Contact</h3>
-            <div className="space-y-3 text-background/70">
+            <h3 className="font-semibold text-base text-background mb-3">Contact</h3>
+            <div className="space-y-2 text-background/70 text-sm">
               <p>📧 info@noraaniacademy.com</p>
               <p>📞 +91 98765 43210</p>
               <p>🕐 24/7 Support</p>
-              <div className="pt-4">
-                <p className="text-islamic-green font-semibold cursor-pointer hover:text-islamic-green/80">
+              <div className="pt-2">
+                <p className="text-islamic-green font-semibold cursor-pointer hover:text-islamic-green/80 text-sm">
                   العربية - Switch Language
                 </p>
               </div>
@@ -82,9 +84,9 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* Bottom Bar */}
-        <div className="border-t border-background/20 pt-8 text-center text-background/60">
-          <p>&copy; 2024 Noorani Academy. All rights reserved. Made with ❤️ for the Ummah.</p>
+        {/* Bottom Bar - More Compact */}
+        <div className="border-t border-background/20 pt-4 lg:pt-6 text-center text-background/60">
+          <p className="text-sm">&copy; 2024 Noorani Academy. All rights reserved. Made with ❤️ for the Ummah.</p>
         </div>
       </div>
     </footer>

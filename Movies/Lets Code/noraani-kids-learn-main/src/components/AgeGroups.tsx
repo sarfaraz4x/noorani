@@ -52,31 +52,31 @@ const AgeGroups = () => {
     <section id="programs" className="py-20 bg-gradient-to-b from-background to-muted relative overflow-hidden">
       <div className="container mx-auto px-4 lg:px-6">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-extrabold text-foreground mb-2" style={{ fontFamily: 'Comic Sans MS, Comic Sans, cursive' }}>
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-foreground mb-2" style={{ fontFamily: 'Comic Sans MS, Comic Sans, cursive' }}>
             Islamic Classes for All Ages
           </h2>
-          <p className="text-2xl font-bold text-[#1C7ED6] mb-4" style={{ fontFamily: 'Comic Sans MS, Comic Sans, cursive' }}>
+          <p className="text-xl md:text-2xl font-bold text-[#1C7ED6] mb-4" style={{ fontFamily: 'Comic Sans MS, Comic Sans, cursive' }}>
             K-12 Program Made for Every Stage of Your Child's Growth
           </p>
         </div>
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-10 mb-12">
           {ageGroups.map((group, index) => (
-            <div key={index} className={`relative flex flex-col items-center rounded-[2.5rem] border-4 ${group.color} shadow-xl pb-10 pt-8 px-6`} style={{ minHeight: '500px' }}>
-              <div className="transition-transform duration-300 ease-in-out hover:scale-110 hover:shadow-2xl hover:ring-4 hover:ring-primary/20 rounded-3xl mb-4" style={{ width: '170px', height: '170px', background: '#fff', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                <img src={group.image} alt={group.title + ' illustration'} className="w-40 h-40 rounded-3xl object-cover border-4 border-white shadow-lg bg-white transition-transform duration-300 ease-in-out" />
+            <div key={index} className={`relative flex flex-col items-center rounded-[1.5rem] lg:rounded-[2.5rem] border-4 ${group.color} shadow-xl pb-6 lg:pb-10 pt-4 lg:pt-8 px-3 lg:px-6`} style={{ minHeight: '400px' }}>
+              <div className="transition-transform duration-300 ease-in-out hover:scale-110 hover:shadow-2xl hover:ring-4 hover:ring-primary/20 rounded-3xl mb-3 lg:mb-4" style={{ width: '120px', height: '120px', background: '#fff', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                <img src={group.image} alt={group.title + ' illustration'} className="w-28 h-28 lg:w-40 lg:h-40 rounded-3xl object-cover border-4 border-white shadow-lg bg-white transition-transform duration-300 ease-in-out" />
                 </div>
-              <h3 className="text-2xl font-extrabold mb-2" style={{ fontFamily: 'Comic Sans MS, Comic Sans, cursive' }}>{group.title}</h3>
-              <p className="text-base text-foreground mb-4 font-semibold">{group.subtitle}</p>
-              <p className="text-base text-muted-foreground mb-4 flex-grow">{group.description}</p>
+              <h3 className="text-lg lg:text-2xl font-extrabold mb-2 text-center" style={{ fontFamily: 'Comic Sans MS, Comic Sans, cursive' }}>{group.title}</h3>
+              <p className="text-xs lg:text-base text-foreground mb-3 lg:mb-4 font-semibold text-center">{group.subtitle}</p>
+              <p className="text-xs lg:text-base text-muted-foreground mb-3 lg:mb-4 flex-grow text-center">{group.description}</p>
               {/* Grade badge inside card */}
-              <span className={`inline-block mt-2 px-4 py-2 rounded-full font-bold text-sm shadow-md ${group.accent}`} style={{ fontFamily: 'Comic Sans MS, Comic Sans, cursive' } }>
+              <span className={`inline-block mt-2 px-2 lg:px-4 py-1 lg:py-2 rounded-full font-bold text-xs lg:text-sm shadow-md ${group.accent}`} style={{ fontFamily: 'Comic Sans MS, Comic Sans, cursive' } }>
                 {group.grade}
               </span>
                 </div>
           ))}
         </div>
         <div className="text-center mt-8">
-          <button className="px-10 py-5 rounded-full bg-primary text-white font-extrabold text-xl shadow-lg hover:bg-primary/90 transition-colors" style={{ fontFamily: 'Comic Sans MS, Comic Sans, cursive' }}>
+          <button className="px-8 lg:px-10 py-4 lg:py-5 rounded-full bg-primary text-white font-extrabold text-lg lg:text-xl shadow-lg hover:bg-primary/90 transition-colors" style={{ fontFamily: 'Comic Sans MS, Comic Sans, cursive' }}>
             Start Learning Today
           </button>
         </div>
