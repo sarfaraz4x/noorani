@@ -18,6 +18,16 @@ export default {
 			}
 		},
 		extend: {
+			fontFamily: {
+				sans: [
+					'Nunito',
+					'Comic Sans MS',
+					'Comic Sans',
+					'cursive',
+					'ui-sans-serif',
+					'system-ui',
+				],
+			},
 			colors: {
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',

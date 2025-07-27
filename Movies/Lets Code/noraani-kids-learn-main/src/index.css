@@ -124,3 +124,7 @@ All colors MUST be HSL.
     @apply bg-background text-foreground;
   }
 }
+
+html, body {
+  font-family: 'Nunito', 'Comic Sans MS', 'Comic Sans', cursive, ui-sans-serif, system-ui;
+}

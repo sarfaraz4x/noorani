@@ -30,7 +30,7 @@ const HeroSection = () => {
         <div className="flex flex-col items-center text-center flex-1 max-w-xs xs:max-w-sm sm:max-w-md md:max-w-lg lg:max-w-xl mx-2 md:mx-0">
           <div className="space-y-3 md:space-y-4 relative w-full">
             <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 w-full max-w-xs xs:max-w-sm sm:max-w-md md:max-w-lg h-20 xs:h-28 sm:h-36 md:h-52 bg-yellow-100 rounded-[60px] shadow-lg -z-10" style={{ filter: 'blur(2px)', opacity: 0.7 }}></div>
-            <h1 className="text-2xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight" style={{ fontFamily: "'Baloo 2', 'Nunito', Arial, sans-serif" }}>
+            <h1 className="text-2xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight" style={{ fontFamily: 'Comic Sans MS, Comic Sans, cursive' }}>
               <span className="text-foreground">Online</span>
               <br />
               <span className="text-primary">ISLAMIC</span>
