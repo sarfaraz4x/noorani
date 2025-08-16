@@ -81,7 +81,7 @@ const WhyChooseUs = () => {
         {/* Content */}
         <div className="flex-1 order-1 lg:order-2">
           <div className="text-center lg:text-left mb-12 lg:mb-16">
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-primary mb-6" style={{ fontFamily: 'Comic Sans MS, Comic Sans, cursive' }}>
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-primary mb-6 font-sans">
               Why Choose Noorani Academy?
             </h2>
             <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto lg:mx-0 leading-relaxed">

@@ -52,10 +52,10 @@ const AgeGroups = () => {
     <section id="programs" className="py-20 bg-gradient-to-b from-background to-muted relative overflow-hidden">
       <div className="container mx-auto px-4 lg:px-6">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-foreground mb-2" style={{ fontFamily: 'Comic Sans MS, Comic Sans, cursive' }}>
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-foreground mb-2 font-sans">
             Islamic Classes for All Ages
           </h2>
-          <p className="text-xl md:text-2xl font-bold text-[#1C7ED6] mb-4" style={{ fontFamily: 'Comic Sans MS, Comic Sans, cursive' }}>
+          <p className="text-xl md:text-2xl font-bold text-[#1C7ED6] mb-4 font-sans">
             K-12 Program Made for Every Stage of Your Child's Growth
           </p>
         </div>
@@ -65,18 +65,18 @@ const AgeGroups = () => {
               <div className="transition-transform duration-300 ease-in-out hover:scale-110 hover:shadow-2xl hover:ring-4 hover:ring-primary/20 rounded-3xl mb-3 lg:mb-4" style={{ width: '120px', height: '120px', background: '#fff', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                 <img src={group.image} alt={group.title + ' illustration'} className="w-28 h-28 lg:w-40 lg:h-40 rounded-3xl object-cover border-4 border-white shadow-lg bg-white transition-transform duration-300 ease-in-out" />
                 </div>
-              <h3 className="text-lg lg:text-2xl font-extrabold mb-2 text-center" style={{ fontFamily: 'Comic Sans MS, Comic Sans, cursive' }}>{group.title}</h3>
+              <h3 className="text-lg lg:text-2xl font-extrabold mb-2 text-center font-sans">{group.title}</h3>
               <p className="text-xs lg:text-base text-foreground mb-3 lg:mb-4 font-semibold text-center">{group.subtitle}</p>
               <p className="text-xs lg:text-base text-muted-foreground mb-3 lg:mb-4 flex-grow text-center">{group.description}</p>
               {/* Grade badge inside card */}
-              <span className={`inline-block mt-2 px-2 lg:px-4 py-1 lg:py-2 rounded-full font-bold text-xs lg:text-sm shadow-md ${group.accent}`} style={{ fontFamily: 'Comic Sans MS, Comic Sans, cursive' } }>
+              <span className={`inline-block mt-2 px-2 lg:px-4 py-1 lg:py-2 rounded-full font-bold text-xs lg:text-sm shadow-md font-sans ${group.accent}`}>
                 {group.grade}
               </span>
                 </div>
           ))}
         </div>
         <div className="text-center mt-8">
-          <button className="px-8 lg:px-10 py-4 lg:py-5 rounded-full bg-primary text-white font-extrabold text-lg lg:text-xl shadow-lg hover:bg-primary/90 transition-colors" style={{ fontFamily: 'Comic Sans MS, Comic Sans, cursive' }}>
+          <button className="px-8 lg:px-10 py-4 lg:py-5 rounded-full bg-primary text-white font-extrabold text-lg lg:text-xl shadow-lg hover:bg-primary/90 transition-colors font-sans">
             Start Learning Today
           </button>
         </div>

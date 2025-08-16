@@ -122,7 +122,7 @@ const Auth = () => {
               <GraduationCap className="h-8 w-8 text-white" />
             </div>
             <div className="text-left">
-              <h1 className="text-2xl font-bold text-primary" style={{ fontFamily: 'Comic Sans MS, Comic Sans, cursive' }}>
+              <h1 className="text-2xl font-bold text-primary font-sans">
                 NOORANI ACADEMY
               </h1>
               <p className="text-sm text-slate-600">Islamic Education for Children</p>

@@ -42,8 +42,8 @@ const Header = () => {
               <img src="/Untitled design (1)-modified (1).png" alt="Noorani Academy Logo" className="w-16 h-16 rounded-full object-cover border-4 border-yellow-200 shadow-lg bg-white" />
             </div>
             <div className="flex flex-col ml-1">
-              <span className="font-black text-2xl text-primary tracking-tight leading-none drop-shadow-sm" style={{ fontFamily: 'Comic Sans MS, Comic Sans, cursive' }}>NOORANI</span>
-              <span className="text-sm md:text-base text-yellow-600 font-semibold mt-0.5 tracking-[0.3em] uppercase leading-none" style={{ letterSpacing: '0.3em', fontFamily: 'Comic Sans MS, Comic Sans, cursive' }}>ACADEMY</span>
+              <span className="font-black text-2xl text-primary tracking-tight leading-none drop-shadow-sm font-sans">NOORANI</span>
+              <span className="text-sm md:text-base text-yellow-600 font-semibold mt-0.5 tracking-[0.3em] uppercase leading-none font-sans" style={{ letterSpacing: '0.3em' }}>ACADEMY</span>
             </div>
           </Link>
 

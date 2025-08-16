@@ -83,7 +83,7 @@ export default function ArabicClasses() {
             
             <div className="grid md:grid-cols-2 gap-8 items-center mb-12">
               <div>
-                <h1 className="text-5xl font-extrabold text-primary mb-4" style={{ fontFamily: 'Comic Sans MS, Comic Sans, cursive' }}>
+                <h1 className="text-5xl font-extrabold text-primary mb-4 font-sans">
                   Arabic Learning for Children
                 </h1>
                 <h2 className="text-2xl font-bold text-primary mb-4">

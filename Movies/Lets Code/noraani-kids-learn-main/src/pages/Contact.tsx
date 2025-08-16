@@ -127,7 +127,7 @@ const Contact = () => {
             <Badge className="mb-4 bg-primary/10 text-primary hover:bg-primary/20">
               Get In Touch
             </Badge>
-            <h1 className="text-4xl md:text-6xl font-bold text-primary mb-6" style={{ fontFamily: 'Comic Sans MS, Comic Sans, cursive' }}>
+            <h1 className="text-4xl md:text-6xl font-bold text-primary mb-6 font-sans">
               Contact
               <span className="block text-yellow-600">Noorani Academy</span>
             </h1>

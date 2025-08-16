@@ -19,7 +19,7 @@ const LearnWithAyaanAndMariam = () => (
       </div>
       {/* Text center */}
       <div className="flex flex-col items-center text-center flex-1 max-w-md lg:max-w-lg">
-        <h2 className="text-2xl md:text-3xl lg:text-5xl font-extrabold text-primary mb-3 lg:mb-4" style={{ fontFamily: 'Comic Sans MS, Comic Sans, cursive' }}>
+        <h2 className="text-2xl md:text-3xl lg:text-5xl font-extrabold text-primary mb-3 lg:mb-4 font-sans">
           Learn with Ayaan & Mariam
         </h2>
         <p className="text-sm md:text-base lg:text-xl text-muted-foreground mb-4 lg:mb-6 text-center leading-relaxed">
@@ -39,7 +39,7 @@ const LiveTeachersFunClasses = () => (
     <div className="container mx-auto px-4 flex flex-col lg:flex-row items-center justify-center gap-10">
       {/* Text content */}
       <div className="flex-1 flex flex-col items-center lg:items-start text-center lg:text-left mb-8 lg:mb-0">
-        <h2 className="text-3xl md:text-4xl font-extrabold text-primary mb-4" style={{ fontFamily: 'Comic Sans MS, Comic Sans, cursive' }}>
+        <h2 className="text-3xl md:text-4xl font-extrabold text-primary mb-4 font-sans">
           Live Teachers. Fun Classes.
         </h2>
         <p className="text-lg md:text-xl text-muted-foreground max-w-lg mb-6 text-center lg:text-left">
@@ -63,7 +63,7 @@ const LiveTeachersFunClasses = () => (
             <span>Fun activities, stories, and games</span>
           </li>
         </ul>
-        <a href="#programs" className="inline-block mt-2 px-8 py-4 bg-primary text-white font-bold rounded-full shadow-lg hover:bg-primary/90 transition-colors text-lg" style={{ fontFamily: 'Comic Sans MS, Comic Sans, cursive' }}>
+        <a href="#programs" className="inline-block mt-2 px-8 py-4 bg-primary text-white font-bold rounded-full shadow-lg hover:bg-primary/90 transition-colors text-lg font-sans">
           Explore Our Programs
         </a>
       </div>
@@ -179,7 +179,7 @@ const EveryClassCounts = () => {
 
         {/* Right: Text content - Improved mobile layout */}
         <div className="flex-1 flex flex-col items-center lg:items-start text-center lg:text-left">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-primary mb-2" style={{ fontFamily: 'Comic Sans MS, Comic Sans, cursive' }}>
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-primary mb-2 font-sans">
             Every Class Counts
           </h2>
           <p className="text-lg md:text-xl font-bold text-slate-700 mb-4 text-center lg:text-left">

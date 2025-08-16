@@ -140,7 +140,7 @@ const About = () => {
             <Badge className="mb-4 bg-primary/10 text-primary hover:bg-primary/20">
               About Noorani Academy
             </Badge>
-            <h1 className="text-4xl md:text-6xl font-bold text-primary mb-6" style={{ fontFamily: 'Comic Sans MS, Comic Sans, cursive' }}>
+            <h1 className="text-4xl md:text-6xl font-bold text-primary mb-6 font-sans">
               Nurturing Hearts,
               <span className="block text-yellow-600">Building Futures</span>
             </h1>
