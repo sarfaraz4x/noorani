@@ -32,11 +32,10 @@ const Footer = () => {
           <div className="col-span-2 lg:col-span-2">
             <div className="flex items-center space-x-2 mb-4">
               <div className="w-10 h-10 bg-primary rounded-full flex items-center justify-center">
-                <span className="text-primary-foreground font-bold text-lg">N</span>
+                <span className="text-primary-foreground font-bold text-lg">A</span>
               </div>
               <div className="flex flex-col">
-                <span className="font-bold text-lg text-background">NOORANI</span>
-                <span className="text-xs text-background/70 -mt-1">ACADEMY</span>
+                <span className="font-bold text-lg text-background">AL AFAQUE</span>
               </div>
             </div>
             <p className="text-background/70 mb-4 leading-relaxed text-sm">
@@ -72,8 +71,8 @@ const Footer = () => {
           <div>
             <h3 className="font-semibold text-base text-background mb-3">Contact</h3>
             <div className="space-y-2 text-background/70 text-sm">
-              <p>📧 info@noraaniacademy.com</p>
-              <p>📞 +91 98765 43210</p>
+              <p>📧 alafaque.app@gmail.com</p>
+              <p>📞 +91 74610 27503</p>
               <p>🕐 24/7 Support</p>
               <div className="pt-2">
                 <p className="text-islamic-green font-semibold cursor-pointer hover:text-islamic-green/80 text-sm">
@@ -86,7 +85,12 @@ const Footer = () => {
 
         {/* Bottom Bar - More Compact */}
         <div className="border-t border-background/20 pt-4 lg:pt-6 text-center text-background/60">
-          <p className="text-sm">&copy; 2024 Noorani Academy. All rights reserved. Made with ❤️ for the Ummah.</p>
+          <div className="flex flex-wrap justify-center gap-x-4 gap-y-1 mb-2 text-xs">
+            <Link to="/privacy-policy" className="hover:text-primary transition-colors">Privacy Policy</Link>
+            <Link to="/terms" className="hover:text-primary transition-colors">Terms &amp; Conditions</Link>
+            <Link to="/refund-policy" className="hover:text-primary transition-colors">Refund &amp; Cancellation Policy</Link>
+          </div>
+          <p className="text-sm">&copy; 2024 Al Afaque. All rights reserved. Made with ❤️ for the Ummah.</p>
         </div>
       </div>
     </footer>

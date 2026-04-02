@@ -112,7 +112,7 @@ const About = () => {
     {
       name: "Amina Patel",
       location: "London, UK",
-      text: "Noorani Academy has transformed my daughter's relationship with the Quran. She now reads with confidence and loves her Islamic studies classes.",
+      text: "Al Afaque has transformed my daughter's relationship with the Quran. She now reads with confidence and loves her Islamic studies classes.",
       rating: 5
     },
     {
@@ -124,7 +124,7 @@ const About = () => {
     {
       name: "Sarah Johnson",
       location: "Toronto, Canada",
-      text: "As a convert, I wanted my children to have proper Islamic education. Noorani Academy has exceeded all my expectations.",
+      text: "As a convert, I wanted my children to have proper Islamic education. Al Afaque has exceeded all my expectations.",
       rating: 5
     }
   ];
@@ -138,7 +138,7 @@ const About = () => {
         <div className="container mx-auto px-4">
           <div className="text-center max-w-4xl mx-auto">
             <Badge className="mb-4 bg-primary/10 text-primary hover:bg-primary/20">
-              About Noorani Academy
+              About Al Afaque
             </Badge>
             <h1 className="text-4xl md:text-6xl font-bold text-primary mb-6 font-sans">
               Nurturing Hearts,
@@ -146,7 +146,7 @@ const About = () => {
             </h1>
             <p className="text-xl text-slate-700 mb-8 leading-relaxed">
               Founded with a vision to make authentic Islamic education accessible to every Muslim child, 
-              Noorani Academy combines traditional Islamic knowledge with modern teaching methods to create 
+              Al Afaque combines traditional Islamic knowledge with modern teaching methods to create 
               confident, knowledgeable, and spiritually grounded young Muslims.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -194,7 +194,7 @@ const About = () => {
                   <div className="w-24 h-24 mx-auto mb-6 bg-primary rounded-full flex items-center justify-center">
                     <BookOpen className="w-12 h-12 text-white" />
                   </div>
-                  <h3 className="text-2xl font-bold text-primary mb-4">Why Choose Noorani Academy?</h3>
+                  <h3 className="text-2xl font-bold text-primary mb-4">Why Choose Al Afaque?</h3>
                   <ul className="space-y-3 text-left">
                     <li className="flex items-center text-slate-700">
                       <CheckCircle className="w-5 h-5 text-green-600 mr-3 flex-shrink-0" />
@@ -228,7 +228,7 @@ const About = () => {
               Our Core Values
             </h2>
             <p className="text-lg text-slate-700 max-w-3xl mx-auto">
-              These fundamental principles guide everything we do at Noorani Academy, 
+              These fundamental principles guide everything we do at Al Afaque, 
               ensuring that every child receives the best possible Islamic education.
             </p>
           </div>
@@ -258,7 +258,7 @@ const About = () => {
             </h2>
             <p className="text-lg text-slate-700 max-w-3xl mx-auto">
               Numbers that reflect our commitment to excellence and the trust 
-              that families worldwide have placed in Noorani Academy.
+              that families worldwide have placed in Al Afaque.
             </p>
           </div>
 
@@ -327,7 +327,7 @@ const About = () => {
               What Parents Say
             </h2>
             <p className="text-lg text-slate-700 max-w-3xl mx-auto">
-              Hear from families who have experienced the Noorani Academy difference 
+              Hear from families who have experienced the Al Afaque difference 
               in their children's Islamic education journey.
             </p>
           </div>
@@ -358,7 +358,7 @@ const About = () => {
         <div className="container mx-auto px-4">
           <div className="text-center max-w-3xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold text-primary mb-6">
-              Join the Noorani Academy Family
+              Join the Al Afaque Family
             </h2>
             <p className="text-lg text-slate-700 mb-8 leading-relaxed">
               Be part of a community dedicated to nurturing the next generation of 

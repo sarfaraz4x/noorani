@@ -99,7 +99,7 @@ const Contact = () => {
 
   const faqs = [
     {
-      question: "How do I enroll my child in Noorani Academy?",
+      question: "How do I enroll my child in Al Afaque?",
       answer: "You can enroll your child by visiting our Programs page, selecting a course, and clicking 'Enroll Now'. You can also call us directly for assistance."
     },
     {
@@ -129,7 +129,7 @@ const Contact = () => {
             </Badge>
             <h1 className="text-4xl md:text-6xl font-bold text-primary mb-6 font-sans">
               Contact
-              <span className="block text-yellow-600">Noorani Academy</span>
+              <span className="block text-yellow-600">Al Afaque</span>
             </h1>
             <p className="text-xl text-slate-700 mb-8 leading-relaxed">
               We're here to help you with any questions about our Islamic education programs. 

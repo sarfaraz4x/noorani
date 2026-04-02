@@ -302,7 +302,7 @@ const Curriculum = () => {
               Ready to Begin Your Child's Islamic Journey?
             </h2>
             <p className="text-lg text-slate-700 mb-8 leading-relaxed">
-              Join thousands of families who have chosen Noorani Academy for their children's Islamic education. 
+              Join thousands of families who have chosen Al Afaque for their children's Islamic education. 
               Start with a free trial and experience the difference our comprehensive curriculum makes.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">

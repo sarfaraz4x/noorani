@@ -39,11 +39,10 @@ const Header = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2 drop-shadow-lg hover:scale-105 transition-transform duration-200" onClick={closeMobileMenu}>
             <div className="w-16 h-16 flex items-center justify-center">
-              <img src="/Untitled design (1)-modified (1).png" alt="Noorani Academy Logo" className="w-16 h-16 rounded-full object-cover border-4 border-yellow-200 shadow-lg bg-white" />
+              <img src="/Untitled design (1)-modified (1).png" alt="Al Afaque Logo" className="w-16 h-16 rounded-full object-cover border-4 border-yellow-200 shadow-lg bg-white" />
             </div>
             <div className="flex flex-col ml-1">
-              <span className="font-black text-2xl text-primary tracking-tight leading-none drop-shadow-sm font-sans">NOORANI</span>
-              <span className="text-sm md:text-base text-yellow-600 font-semibold mt-0.5 tracking-[0.3em] uppercase leading-none font-sans" style={{ letterSpacing: '0.3em' }}>ACADEMY</span>
+              <span className="font-black text-2xl text-primary tracking-tight leading-none drop-shadow-sm font-sans">AL AFAQUE</span>
             </div>
           </Link>
 

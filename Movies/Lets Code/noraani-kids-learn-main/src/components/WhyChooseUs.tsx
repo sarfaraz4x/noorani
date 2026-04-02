@@ -82,10 +82,10 @@ const WhyChooseUs = () => {
         <div className="flex-1 order-1 lg:order-2">
           <div className="text-center lg:text-left mb-12 lg:mb-16">
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-primary mb-6 font-sans">
-              Why Choose Noorani Academy?
+              Why Choose Al Afaque?
             </h2>
             <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto lg:mx-0 leading-relaxed">
-              Discover why thousands of Muslim families trust Noorani Academy for their children's Islamic education
+              Discover why thousands of Muslim families trust Al Afaque for their children's Islamic education
             </p>
           </div>
 

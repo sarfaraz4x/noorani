@@ -123,7 +123,7 @@ const Auth = () => {
             </div>
             <div className="text-left">
               <h1 className="text-2xl font-bold text-primary font-sans">
-                NOORANI ACADEMY
+                AL AFAQUE
               </h1>
               <p className="text-sm text-slate-600">Islamic Education for Children</p>
             </div>

@@ -89,7 +89,7 @@ export default function IslamicStudies() {
                 Islamic knowledge can present complexity that challenges young learners. Students benefit tremendously from qualified instructors who provide accurate explanations and prevent misunderstandings of fundamental religious principles.
               </p>
               <p className="text-lg text-slate-700 mb-8">
-                Noorani Academy provides expert educators prepared to guide your child's initial steps in Islamic learning. Additionally, our beloved mascot characters serve as encouraging companions throughout your child's educational adventure, motivating continued learning and engagement.
+                Al Afaque provides expert educators prepared to guide your child's initial steps in Islamic learning. Additionally, our beloved mascot characters serve as encouraging companions throughout your child's educational adventure, motivating continued learning and engagement.
               </p>
             </div>
           </div>
@@ -121,7 +121,7 @@ export default function IslamicStudies() {
                 Given the extensive scope of Islamic studies—spanning beginner through advanced levels—systematic lesson planning ensures children learn at appropriate developmental paces.
               </p>
               <p className="text-lg text-slate-700 mb-8">
-                At Noorani Academy, we prioritize your child's individual learning rhythm while preventing information overload. When consulting with course instructors, you'll receive detailed lesson plans that can be customized to match your child's specific capabilities and learning style.
+                At Al Afaque, we prioritize your child's individual learning rhythm while preventing information overload. When consulting with course instructors, you'll receive detailed lesson plans that can be customized to match your child's specific capabilities and learning style.
               </p>
             </div>
           </div>

@@ -95,7 +95,7 @@ export default function Programs() {
                   Choose a Structured
                 </h1>
                 <h2 className="text-4xl font-bold text-primary mb-4 font-sans">
-                  Noorani Academy Program
+                  Al Afaque Program
                 </h2>
                 <p className="text-lg text-slate-700 mb-6 max-w-xl">
                   Online Quran, Arabic, and Islamic Studies classes with professional teachers, 
@@ -175,7 +175,7 @@ export default function Programs() {
         <section className="py-12 bg-white">
           <div className="container mx-auto px-4">
             <div className="text-center mb-8">
-              <h2 className="text-3xl font-bold text-primary mb-4">Why Choose Noorani Academy?</h2>
+              <h2 className="text-3xl font-bold text-primary mb-4">Why Choose Al Afaque?</h2>
               <p className="text-lg text-slate-700 max-w-2xl mx-auto">
                 Our comprehensive approach ensures every child receives the best Islamic education experience
               </p>

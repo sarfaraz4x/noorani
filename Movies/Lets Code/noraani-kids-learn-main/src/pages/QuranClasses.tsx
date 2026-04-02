@@ -88,7 +88,7 @@ export default function QuranClasses() {
                 Quranic recitation requires precise pronunciation and understanding of tajweed rules that can be challenging for young learners. Students benefit tremendously from qualified instructors who provide accurate guidance and prevent common mistakes in Quranic reading.
               </p>
               <p className="text-lg text-slate-700 mb-8">
-                Noorani Academy provides expert Quran teachers prepared to guide your child's journey in Quranic learning. Our beloved mascot characters serve as encouraging companions throughout your child's Quranic education, making the learning process both spiritual and enjoyable.
+                Al Afaque provides expert Quran teachers prepared to guide your child's journey in Quranic learning. Our beloved mascot characters serve as encouraging companions throughout your child's Quranic education, making the learning process both spiritual and enjoyable.
               </p>
             </div>
           </div>
@@ -120,7 +120,7 @@ export default function QuranClasses() {
                 Given the sacred nature of Quranic studies—spanning from basic Arabic letters to advanced tajweed rules and memorization—systematic lesson planning ensures children learn at appropriate developmental paces while maintaining reverence for the Holy text.
               </p>
               <p className="text-lg text-slate-700 mb-8">
-                At Noorani Academy, we prioritize your child's individual learning rhythm while building a strong foundation in Quranic studies. When consulting with our Quran instructors, you'll receive detailed lesson plans that can be customized to match your child's specific capabilities and learning style, ensuring steady progress in their Quranic journey.
+                At Al Afaque, we prioritize your child's individual learning rhythm while building a strong foundation in Quranic studies. When consulting with our Quran instructors, you'll receive detailed lesson plans that can be customized to match your child's specific capabilities and learning style, ensuring steady progress in their Quranic journey.
               </p>
             </div>
           </div>

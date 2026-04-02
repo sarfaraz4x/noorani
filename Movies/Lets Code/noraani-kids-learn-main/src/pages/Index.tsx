@@ -339,7 +339,7 @@ const Index = () => {
           </div>
         )}
         <a
-          href="https://wa.me/917461027503?text=Hi%2C%20I%20would%20like%20more%20details%20about%20Noorani%20Academy."
+          href="https://wa.me/917461027503?text=Hi%2C%20I%20would%20like%20more%20details%20about%20Al%20Afaque."
           target="_blank"
           rel="noopener noreferrer"
           className="whatsapp-float-btn bg-green-500 hover:bg-green-600 text-white rounded-full shadow-lg flex items-center justify-center w-16 h-16 text-4xl transition-colors animate-bounce-cta"

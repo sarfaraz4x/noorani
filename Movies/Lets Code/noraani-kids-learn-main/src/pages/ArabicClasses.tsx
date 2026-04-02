@@ -113,7 +113,7 @@ export default function ArabicClasses() {
             <div className="max-w-4xl mx-auto">
               <h2 className="text-3xl font-bold text-primary mb-6 text-center">Addressing Parent Concerns</h2>
               <p className="text-lg text-slate-700 mb-6">
-                Many parents find themselves questioning: Where can I locate qualified Arabic instructors for my children? Do virtual Arabic programs deliver meaningful results? What investment is required for authentic, native-speaker instruction? These concerns are completely understandable, and Noorani Academy is here to provide comprehensive solutions.
+                Many parents find themselves questioning: Where can I locate qualified Arabic instructors for my children? Do virtual Arabic programs deliver meaningful results? What investment is required for authentic, native-speaker instruction? These concerns are completely understandable, and Al Afaque is here to provide comprehensive solutions.
               </p>
             </div>
           </div>
@@ -125,7 +125,7 @@ export default function ArabicClasses() {
             <div className="max-w-4xl mx-auto">
               <h2 className="text-3xl font-bold text-primary mb-6 text-center">Excellence in Arabic Education</h2>
               <p className="text-lg text-slate-700 mb-8">
-                Noorani Academy delivers premier Arabic language instruction specifically designed for young learners. Our educational team consists of native Arabic speakers who possess advanced teaching credentials and extensive experience guiding children toward Arabic fluency. Our virtual classroom environment features carefully structured curriculum frameworks that prioritize your child's individual learning journey while maintaining exceptional value compared to traditional alternatives.
+                Al Afaque delivers premier Arabic language instruction specifically designed for young learners. Our educational team consists of native Arabic speakers who possess advanced teaching credentials and extensive experience guiding children toward Arabic fluency. Our virtual classroom environment features carefully structured curriculum frameworks that prioritize your child's individual learning journey while maintaining exceptional value compared to traditional alternatives.
               </p>
               <p className="text-lg text-slate-700 mb-8">
                 Our comprehensive program enhances multiple linguistic competencies: Arabic literacy, composition skills, verbal communication, and auditory comprehension. Upon completion, students will confidently engage in Arabic conversations, comprehend spoken Arabic, recite Quranic verses with proper pronunciation, and grasp their meanings. This holistic approach fulfills every Muslim parent's aspiration to witness their children beautifully reciting the Holy Quran in its original language.
@@ -159,7 +159,7 @@ export default function ArabicClasses() {
               <div>
                 <h3 className="text-2xl font-bold text-primary mb-4">Engaging Learning Experience</h3>
                 <p className="text-slate-700 mb-4">
-                  Noorani Academy's virtual Arabic curriculum is thoughtfully crafted to address your child's specific educational requirements. Through interactive and entertaining instructional approaches, children remain enthusiastic about learning. Understanding that young minds thrive with playful elements, our courses incorporate game-based learning strategies throughout the educational process.
+                  Al Afaque's virtual Arabic curriculum is thoughtfully crafted to address your child's specific educational requirements. Through interactive and entertaining instructional approaches, children remain enthusiastic about learning. Understanding that young minds thrive with playful elements, our courses incorporate game-based learning strategies throughout the educational process.
                 </p>
               </div>
 
@@ -200,7 +200,7 @@ export default function ArabicClasses() {
                 <div>
                   <h3 className="text-xl font-bold text-primary mb-4">Interactive Learning Environment</h3>
                   <p className="text-slate-700 mb-4">
-                    Through our specially designed online Arabic curriculum, your child will experience joyful, meaningful education. Understanding that young learners need constant engagement to maintain focus, Noorani Academy introduces students to beloved characters who guide them through exciting educational adventures filled with discovery and achievement.
+                    Through our specially designed online Arabic curriculum, your child will experience joyful, meaningful education. Understanding that young learners need constant engagement to maintain focus, Al Afaque introduces students to beloved characters who guide them through exciting educational adventures filled with discovery and achievement.
                   </p>
                 </div>
                 
