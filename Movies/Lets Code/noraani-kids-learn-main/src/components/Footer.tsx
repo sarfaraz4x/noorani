@@ -31,8 +31,8 @@ const Footer = () => {
           {/* Logo and Description */}
           <div className="col-span-2 lg:col-span-2">
             <div className="flex items-center space-x-2 mb-4">
-              <div className="w-10 h-10 bg-primary rounded-full flex items-center justify-center">
-                <span className="text-primary-foreground font-bold text-lg">A</span>
+              <div className="w-10 h-10 rounded-full overflow-hidden bg-white">
+                <img src="/alafaque.png" alt="Al Afaque Logo" className="w-full h-full object-cover" />
               </div>
               <div className="flex flex-col">
                 <span className="font-bold text-lg text-background">AL AFAQUE</span>
