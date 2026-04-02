@@ -12,6 +12,8 @@ const courses = [
     offerFee: 1499,
     offerSaving: 598,
     classDays: "Saturday, Sunday, Monday",
+    description: "Master the correct pronunciation and rules of Quranic recitation. This foundational course covers Makharij (articulation points), Sifaat (characteristics of letters), and essential Tajweed rules — giving your child the confidence to recite the Quran beautifully and accurately.",
+    highlights: ["Makharij al-Huroof", "Noon & Meem rules", "Madd (elongation) rules", "Live correction by expert teacher"],
     syllabus: [],
     note: "",
     best: false,
@@ -23,6 +25,8 @@ const courses = [
     offerFee: 1499,
     offerSaving: 598,
     classDays: "Tuesday, Wednesday, Thursday",
+    description: "A structured introduction to Urdu reading and writing for young learners. Students will learn to recognise Urdu alphabets, form words, and read short sentences — building a strong literacy foundation in one of the most widely spoken Islamic languages.",
+    highlights: ["Urdu alphabet & harakat", "Word formation & reading", "Short sentence practice", "Fun interactive exercises"],
     syllabus: [],
     note: "",
     best: false,
@@ -34,6 +38,8 @@ const courses = [
     offerFee: 1499,
     offerSaving: 598,
     classDays: "Sunday, Monday, Tuesday",
+    description: "An in-depth exploration of the 30th Juz (Amma Para) of the Holy Quran. Students learn the meaning, context, and lessons of each surah — developing a deep understanding of Allah's words and strengthening their connection with the Quran beyond mere recitation.",
+    highlights: ["Tafseer of all Surahs in Juz Amma", "Vocabulary & word meanings", "Lessons & moral values", "Age-appropriate explanations"],
     syllabus: [],
     note: "",
     best: true,
@@ -45,6 +51,8 @@ const courses = [
     offerFee: 1599,
     offerSaving: 648,
     classDays: "",
+    description: "A comprehensive Islamic scholarship program designed for dedicated female students. Covering classical Islamic sciences over 3 years and 6 semesters, this course nurtures well-rounded Islamic scholars grounded in Quran, Hadith, Fiqh, and Arabic.",
+    highlights: [],
     syllabus: [
       "Aquedah",
       "Fiqh (Deeni Masail) + Usool e Fiqh",
@@ -128,6 +136,23 @@ export default function Pricing() {
                       <p className="text-xs text-green-600">Save Rs. {course.offerSaving}!</p>
                     </div>
                   </div>
+
+                  {/* Description */}
+                  {course.description && (
+                    <p className="text-sm text-slate-600 leading-relaxed mb-4">{course.description}</p>
+                  )}
+
+                  {/* Highlights */}
+                  {course.highlights.length > 0 && (
+                    <ul className="space-y-1 mb-4">
+                      {course.highlights.map((h, j) => (
+                        <li key={j} className="text-sm text-slate-700 flex items-start gap-2">
+                          <span className="text-primary mt-0.5">✓</span>
+                          {h}
+                        </li>
+                      ))}
+                    </ul>
+                  )}
 
                   {/* Class Days */}
                   {course.classDays && (

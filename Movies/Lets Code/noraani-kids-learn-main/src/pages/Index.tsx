@@ -77,15 +77,12 @@ const LiveTeachersFunClasses = () => (
           <div className="absolute -top-16 left-1/3 -ml-1.5 w-6 h-6 bg-yellow-400 border-2 border-yellow-500 rounded-full transform -rotate-12"></div>
           <div className="absolute -top-16 right-1/3 -mr-1.5 w-6 h-6 bg-yellow-400 border-2 border-yellow-500 rounded-full transform rotate-12"></div>
           {/* Screen */}
-          <div className="bg-black rounded-xl overflow-hidden aspect-video shadow-inner">
-            <iframe 
-              className="w-full h-full"
-              src="https://www.youtube.com/embed/mQwgJ2-9lVI?autoplay=0&rel=0"
-              title="YouTube video player"
-              frameBorder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-            ></iframe>
+          <div className="bg-gradient-to-b from-sky-50 to-white rounded-xl overflow-hidden aspect-video shadow-inner flex items-center justify-center">
+            <img
+              src="/a-charming-child-friendly-cartoon-illust_xn5OLAW7RgKHG6Lm1It5lg_gk1ihdTgSCyfg1K-CU35WA.jpeg"
+              alt="Child learning Quran"
+              className="h-full w-full object-contain"
+            />
           </div>
           {/* TV Details */}
           <div className="absolute -bottom-6 left-1/2 -translate-x-1/2 w-20 h-6 bg-teal-500 rounded-b-lg border-x-4 border-b-4 border-teal-600"></div>
